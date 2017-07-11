@@ -1,23 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Write a New Blog Post</h2>
-<p class="error">{{title_error}}</p>
-<p class="error">{{content_error}}</p>
-<form method='post'>
-    <div>
-        <label>Title</br>
-            <input type="text" name="blog_title" value=""/>
-        </label>
-    </div>
-    </br>
-    <div>
-        <label>Body</br>
-            <textarea name="blog_content" value=""></textarea>
-        </label>
-    </div>
-    <input type="submit" value="Post"/>
-</form>
+    <h2>Write a New Blog Post</h2>
 
+    <p class="error">{{ title_error }}</p>
+    <p class="error">{{ content_error }}</p>
+
+    <form method='post'>
+        <div>
+            <label>Title</br>
+                <input type="text" name="blog_title" value=""/>
+            </label>
+        </div>
+        </br>
+        <div>
+            <label>Body</br>
+                <textarea name="blog_content" value=""></textarea>
+            </label>
+        </div>
+        <input type="submit" value="Post"/>
+    </form>
 
 {% endblock %}

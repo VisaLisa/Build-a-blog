@@ -1,23 +1,24 @@
 <!doctype html>
-<html>
-    <head>
-        <title>{{title}}</title>
-        <link rel="stylesheet" type="text/css" href="../static/style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
 <body>
-    <div>
-        <h1>Build-A-Blog</h1>
-    </div>
-    <nav>
-      <ul>
+<div>
+    <h1>Build-A-Blog</h1>
+</div>
+<nav>
+    <ul>
         <li><a href="/blog">Home Page</a></li>
         <li><a href="/newpost">Create a New Post</a></li>
-      </ul>
-    </nav>
-    </br>
+    </ul>
+</nav>
+</br>
 
-    {% block content %}
-    {% endblock %}
+{% block content %}
+{% endblock %}
 
 </body>
 </html>
